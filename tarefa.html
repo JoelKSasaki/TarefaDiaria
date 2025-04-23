@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./tarefas.css">
-    <script src="tarefa.js"></script>
     <title>tarefas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-  </head>
 </head>
 <body>
     <div class="tarefa">
@@ -28,28 +26,31 @@
                 <p>Subtarefas</p>
                 <input type="text" placeholder="Defina subtarefas (separe-as com vírgula)" id="subtasks">
             </div>
+            <input type="submit" value="Adicionar" class="add" id="add">
         </form>
         
+        <div class="showtask" id="showtask">
+            <div class="title" id="titulo">
+                <p class="nome" id="name"></p>
+            </div>
+    
+            <div class="description" id="desc">
+                <p class="dc" id="dc"></p>
+            </div>
 
-        <button id="add">Adicionar</button>
-        
+            <div class="botoes">
+                <button class="delete" id="del">Excluir</button>
+                <button class="finished" id="end">Marcar como concluída</button>
+            </div>
 
-        <ul>
-            <li>
-                <div class="title" id="titulo">
-
-                </div>
-
-                <div class="description" id="desc">
-
-                </div>
-
-                <div class="subtarefas" id="subtask">
-
-                </div>
-            </li>
-        </ul>
+            <div class="sub" id="subtasks-container">
+                <ul id="subtarefa">
+                    
+                </ul>
+            </div>
+        </div>
     </div>
     
+    <script src="./tarefa.js"></script>
 </body>
 </html>
